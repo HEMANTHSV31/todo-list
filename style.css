@@ -7,16 +7,14 @@
 body{
     font-family: 'Times New Roman', Times, serif;
     display: flex;
-    background-color:lightgoldenrodyellow;
-    min-height: 100vh;
+    /* background-color:rgb(234, 234, 219); */
+    min-height: 100%;
     justify-content: center;
     align-items: center;
     margin: 0;
 }
 .container
 {
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
-    /* width: 550px; */
     margin-bottom: 50px;
     border-radius: 10px;
     margin-right: 620px;
@@ -65,8 +63,6 @@ ul li {
 ul li::before {
     content: '';
     position: absolute;
-    /* height: 28px;
-    width: 28px; */
     border-radius: 50%;
     background-image: url('check-icon.png');
     background-size: cover;
@@ -77,14 +73,14 @@ ul li::before {
 li{
   display:flex;
  justify-content: space-between; 
-  
+ color: red;
 } 
 
 .checked {
     text-decoration: line-through;
-    
+    color:green;
 }
-#myvideo
+ #myvideo
 {
     position: absolute;
     top: 0;
@@ -93,8 +89,14 @@ li{
     height: 100%;
     object-fit: cover;
     z-index: -1;
-}
+} 
 span{
     margin:auto;
-    
 } 
+.edit,.delete
+{
+    padding: 8px;
+    text-align: center;
+    color: #ddd;
+    background-color: aqua;
+}
